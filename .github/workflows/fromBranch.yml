@@ -14,3 +14,6 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4
 
+      - name: PWD
+        uses: pwd
+
