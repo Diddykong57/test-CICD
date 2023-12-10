@@ -19,7 +19,7 @@ jobs:
         node-version: ['16.x', '18.x']
 
     steps:
-      - run: 'Deploy by @${{ github.actor }}'
+      - run: echo 'Deploy by @${{ github.actor }}'
       - run: pwd
 #      - uses: actions/checkout@v4
 #      - name: Use Node.js ${{ matrix.node-version }}
