@@ -14,11 +14,17 @@ jobs:
       - name: Starting
         run: echo "💡 Start of the job 💡"
 
+      - name: pre-checkout
+        run: pwd
+
       - name: Checkout du code
         uses: actions/checkout@v4
 
-      - name: Docker compose
-        run: docker compose up
+      - name: post-checkout
+        run: pwd
+
+#      - name: Docker compose
+#        run: docker compose up
 
       - name: Image created
         run: echo "🎉 The image was automatically created by ${{ github.actor }}."
