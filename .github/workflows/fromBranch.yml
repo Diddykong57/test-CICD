@@ -6,7 +6,7 @@ name: From a branch
 on:
   push:
     branches: 
-      - otherTest
+      - test
 
 jobs:
   build:
