@@ -40,8 +40,9 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4
 
+      - run: export
       - name: Log in to Docker registry
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} https://hub.docker.com
+        run: docker login -u ${{ secrets.DOCKER_LOGIN }} -p ${{ secrets.DOCKER_PASSWORD }} https://hub.docker.com
 
       - name: Build de l'image Docker
         run: docker build -t votre_nom_dimage:latest .
