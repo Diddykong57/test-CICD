@@ -17,6 +17,3 @@ jobs:
       - name: Chemin d'accès
         run: pwd
 
-      - name: Docker compose
-        run: docker compose up
-
