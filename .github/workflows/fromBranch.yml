@@ -14,6 +14,9 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4
 
-      - name: Exécuter des actions supplémentaires
+      - name: Chemin d'accès
         run: pwd
+
+      - name: Docker compose
+        run: docker compose up
 
