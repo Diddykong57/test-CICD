@@ -77,4 +77,7 @@ jobs:
       - name: Push Docker Image
         run: docker push diddykong57/rois-du-feu:latest
 
+      - name: Docker compose
+        run: docker compose up
+
 
