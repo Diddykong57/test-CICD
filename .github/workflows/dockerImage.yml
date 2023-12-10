@@ -1,0 +1,25 @@
+name: From a branch
+run-name: ${{ github.actor }} is pushing a feature 🚀
+
+on:
+  push:
+    branches:
+      - 'features/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Starting
+        run: echo "💡 Start of the job 💡"
+
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Docker compose
+        run: docker compose up
+
+      - name: Image created
+        run: echo "🎉 The image was automatically created by ${{ github.actor }}."
+
