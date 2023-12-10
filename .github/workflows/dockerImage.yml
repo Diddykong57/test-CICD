@@ -1,4 +1,4 @@
-name: From a branch
+name: Docker
 run-name: ${{ github.actor }} is pushing a feature 🚀
 
 on:
