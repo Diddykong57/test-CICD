@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "hello.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon hello.js"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +12,8 @@
   "description": "",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.2"
   }
 }
