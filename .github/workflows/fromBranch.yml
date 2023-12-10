@@ -10,9 +10,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: ['16.x', '18.x']
-
     steps:
-    - run: pwd
+      - name: Checkout du code
+        uses: actions/checkout@v2
+
+      - name: Exécuter des actions supplémentaires
+        run: pwd
+
