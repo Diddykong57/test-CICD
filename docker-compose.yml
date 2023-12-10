@@ -1,9 +1,9 @@
-version: "24.0.6"
+version: "3.9"
 services:
   web:
     tty: true
     build: .
     ports:
-      - "8080:8000"
+      - "8080:3000"
     volumes:
-      - ./:/home/NicoTEST
+      - ./:/home/beginFolder
