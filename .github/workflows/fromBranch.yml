@@ -3,7 +3,7 @@ name: From a branch
 on:
   push:
     branches: 
-      - features/test
+      - origin/features/test
 
 jobs:
   build:
