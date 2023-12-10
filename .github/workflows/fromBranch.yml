@@ -3,7 +3,7 @@ name: From a branch
 on:
   push:
     branches: 
-      - 'features/**'
+      - 'origin/features/**'
 
 jobs:
   build:
