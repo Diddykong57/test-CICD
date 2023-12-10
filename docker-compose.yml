@@ -1,0 +1,9 @@
+version: "24.0.6"
+services:
+  web:
+    tty: true
+    build: .
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./:/home/NicoTEST
