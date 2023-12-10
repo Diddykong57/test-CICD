@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Commande à exécuter lorsque le conteneur démarre
-CMD ["npm", "start"]
+CMD ["npm", "build"]
