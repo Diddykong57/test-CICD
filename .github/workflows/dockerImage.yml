@@ -78,6 +78,7 @@ jobs:
         run: docker push diddykong57/rois-du-feu:latest
 
       - name: Docker compose
-        run: docker compose up
+#        run: docker compose up
+        run: docker compose --file diddykong57/rois-du-feu:latest -d
 
 
